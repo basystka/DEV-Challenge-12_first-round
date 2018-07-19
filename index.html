@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Form</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="donate">
+			<h2>Заповніть форму</h2>
+			<div class="form_info">
+				<ul class="tabs">
+					<li><a href="#person">Фіз.особа</a></li>
+					<li><a href="#organisation">Юр.особа</a></li>
+				</ul>
+				<form id="person">
+					<ul class="person_info_left">
+						<li>Ім’я<br>
+							<input type="name" name="firstname">
+						</li>
+						<li>Прізвище<br>
+							<input type="name" name="lastname">
+						</li>
+						<li>Назва компанії, організації<br>
+							<input class="requisites" type="text" name="compay">
+						</li>
+						<li>Email-адреса<br>
+							<input class="requisites" type="email" name="email">
+						</li>
+						<li>Номер телефону<br>
+							<input class="requisites" type="phone" name="phone">
+						</li>
+					</ul>
+					<ul class="person_info_right">
+						<li>Країна<br>
+							<input class="requisites" type="text" name="country">
+						</li>
+						<li>Місто<br>
+							<input type="text" name="city">
+						</li>
+						<li>Штат<br>
+							<input type="text" name="state">
+						</li>
+						<li>Адреса<br>
+							<input class="requisites" type="text" name="address">
+						</li>
+						<li>Індекс<br>
+							<input type="text" name="code">
+						</li>
+					</ul>
+					
+				</form>
+				<form id="organisation"></form>
+			</div>
+	<h2>Види допомоги</h2>
+	<p>Ви можете змінити вид допомоги</p>
+	<div class="ways_of_help">
+		<ul class="icons">
+			<li><a href="#done"><span>Зробити</span></a><div class="arrow"></div></li>
+			<li><a href="#pay_way"><span>Фінансова допомога</span></a><div class="arrow"></div></li>
+			<li><a href="#mat_help"><span>Матеріальна допомога</span></a><div class="arrow"></div></li>
+			<li><a href="#voluntary"><span>Волонтерство</span></a><div class="arrow"></div></li>
+		</ul>
+	<form id="done">Done</form>
+	<form id="pay_way">
+		<div class="pay_left">
+			<p>Спосіб оплати</p>
+			<ul class="pay_icons">
+				<li><a href=""><span class="masterCard"><span class="path1"></span><span class="path2">	
+				</span></span><span class="info">Карта Visa/MasterCard</span></a></li>
+				<li><a class="active" href=""><span>Приват 24</span></a></li>
+				<li><a href=""><span>Термінали України</span></a></li>
+				<li><a href=""><span>WebMoney</span></a></li>
+				<li><a href=""><span>PayPal</span></a></li>
+			</ul>
+		</div>
+		<div class="pay_right">
+			<p>Введіть наступні дані</p>
+			
+			<ul class="pay_icons_right">
+				<li>Номер картки<br>
+					<input type="text" name="card">
+					<input type="text" name="card">
+					<input type="text" name="card">
+					<input type="text" name="card">
+				</li>
+				<li>Термін дії<br>
+					<input type="text" name="card">
+				</li>
+				<li>CVC/CVV<br>
+					<input type="text" name="card">
+				</li>
+				
+			</ul>
+			
+		</div>
+	</form>
+	<form id="mat_help">Help</form>
+	<form id="voluntary">Volutary</form>
+	</div>
+	<button type="submit">Допомогти</button>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="js/common.js"></script>
+</body>
+</html>
